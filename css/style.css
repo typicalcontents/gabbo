@@ -1,12 +1,7 @@
 @font-face {
-  font-family: "AmericanaStd";
-  src: url("../fonts/AmericanaStd-Bold.otf"),
-}
-
-@font-face {
   font-family: 'DegularText';
   src:  url("../fonts/Degular_Text-Regular.woff2") format("woff2"),
-        url("../fonts/Degular_Text-Regular.woff2") format("woff");
+        url("../fonts/Degular_Text-Regular.woff") format("woff");
 }
 
 @font-face {
