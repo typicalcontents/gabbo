@@ -1,0 +1,269 @@
+@font-face {
+  font-family: "DegularTextDemo";
+  src: url("../fonts/DegularTextDemo-Regular.otf"),
+}
+
+@font-face {
+  font-family: "AmericanaStd";
+  src: url("../fonts/AmericanaStd-Bold.otf"),
+}
+
+@font-face {
+  font-family: 'DegularTextDemo';
+  src:  url("../fonts/degulartextdemo-regular-webfont.woff2") format("woff2"),
+        url("../fonts/degulartextdemo-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'AmericanaStd';
+  src:  url("../fonts/AmericanaStd-Bold.woff2") format("woff2"),
+        url("../fonts/AmericanaStd-Bold.woff") format("woff");
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Resetting iOS button style */
+
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+-webkit-appearance: none;
+border-radius: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body{
+  background-color: #F6EEE8;
+
+}
+
+::selection {
+  background: #16C734; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #16C734; /* Gecko Browsers */
+}
+
+header {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  text-align: center;
+}
+
+header .intro {
+  font-family: "DegularTextDemo", serif;
+  font-size: 28px;
+  line-height: 110%;
+  padding-top: 2rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+#bg-image {
+  background-image: url("../img/bg-image.png");
+  height: 441px;
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  width: 100%;
+  margin-bottom: 3.75rem;
+}
+
+#carousel-container {
+  display: none;
+}
+
+/* #carousel-container::-webkit-scrollbar {
+  width: 0 !important
+} */
+
+#carousel-container img {
+  display: none;
+
+}
+
+.signup-container {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 40rem;
+  padding: 5.25rem 3.75rem;
+  background-color: #000;
+}
+
+.signup-container .signup-heading {
+  font-family: "AmericanaStd", sans-serif;
+  color: #fff;
+  font-size: 3rem;
+  line-height: 100%;
+}
+
+form {
+  margin-top: 1.875rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  height: 4.125rem;
+  box-sizing: border-box;
+  line-height: 1;
+  font-weight: 400;
+}
+
+form input {
+  padding: 1rem;
+  border: none;
+  border-radius: 0;
+  width: 60%;
+  font-size: 22px;
+  background: #fff;
+  float: left;
+  height: 4.125rem;
+  font-size: 22px;
+  color: #777777;
+  font-family: "DegularTextDemo", serif;
+  font-size: 1.375rem;
+  color: #777777;
+  border-radius: 0;
+
+}
+
+form button, form .button {
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+  font-family: "DegularTextDemo", serif;
+  background: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 40%;
+  text-transform: uppercase;
+  height: 4.125rem;
+}
+
+label {
+  display: none;
+}
+
+#signup-form {
+  width: 100%;
+  margin-top: 2rem
+}
+
+footer {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  text-align: center;
+}
+
+.contact {
+  padding-top: 0.875rem;
+}
+
+.contact a {
+  font-family: "DegularTextDemo", sans-serif;
+  font-size: 1rem;
+  color: #767676;
+  text-decoration: none;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 768px) {
+  body {
+
+  }
+
+header{
+  width: 100%;
+  text-align: left;
+  padding-top: 1.875rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  padding-bottom: 1.875rem;
+
+}
+
+header .intro {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  padding-top: 1.875rem;
+  margin: 0;
+}
+
+#bg-image {
+  display: none;
+}
+
+#carousel-container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: auto;
+  padding-bottom: 1.875rem;
+  overflow: scroll;
+}
+
+#carousel-container img {
+  display: block;
+  margin: 0 1rem;
+  float: left;
+  height: 372px;
+  width: auto;
+}
+
+#carousel-container img:last-child {
+  padding-right: 1rem;
+}
+
+.signup-container {
+  text-align: left;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  max-width: 100%;
+}
+
+.signup-container .signup-heading {
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+}
+
+}
+
+/* Big boys */
+
+@media only screen and (min-width: 1700px) {
+
+#carousel-container {
+  display: block;
+  width: 1700px;
+  margin: 0 auto;
+}
+
+}
